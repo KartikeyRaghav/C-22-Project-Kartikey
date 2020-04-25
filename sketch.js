@@ -15,6 +15,8 @@ function preload(){
 	packageIMG=loadImage("package.png")
 }
 
+
+// Calling the setup function
 function setup() {
 	// Creating a canvas
 	createCanvas(800, 700);
@@ -41,7 +43,7 @@ function setup() {
 	world = engine.world;
 
 	// Creating a package cirlce
-	packageBody = Bodies.circle(width/2 , 200 , 5 , {restitution:0.5, isStatic:true});
+	packageBody = Bodies.circle(width/2 , 200 , 5 , {restitution:0.55, isStatic:true});
 	World.add(world, packageBody);
 
 	//Create a Ground
@@ -75,6 +77,3 @@ function draw() {
 		  drawSprites();
  
 }
-
-
-
